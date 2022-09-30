@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"> -->
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <!-- <script src="https://github.com/ReeganExE/youtube-screenshot/blob/master/youtube-screengrab.min.js"></script> -->
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <main class="container">
+        <div id="capture" class="capture">
+            <img src="output/base_thumbnail.png">
+            <div id="title" class="textbox textarea title-area" contenteditable="true">
+                Sermon Title
+            </div>
+            <div id="date" class="textbox textarea date-area" contenteditable="true">
+                Month Day, Year
+            </div>
+        </div>
+
+        <div class="selection-choices" id="step1">
+            <div id="step-text">Step 1</div>
+            <button role="button" id="getYoutubeButton" onclick="youtubeButton();">Input YouTube URL</button>
+        </div>
+        <div class="selection-choices" id="step2">
+            <div id="step-text">Step 2</div>
+            <button role="button" id="changeTitleButton" onclick="changeTitle();">Change Title</button>
+            <button role="button" id="changeDateButton" onclick="changeDate();">Change Date</button>
+        </div>
+        <div class="selection-choices" id="step3">
+            <div id="step-text">Step 3</div>
+            <button role="button" id="saveImageButton" onclick="saveImage();">Save Image</button>
+        </div>
+    </main>
+
+    <img src="" id="imgConverted">
+
+</body>
+
+</html>
+
+<!-- <script>exportJSON()</script> -->

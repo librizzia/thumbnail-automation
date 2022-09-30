@@ -1,0 +1,113 @@
+@font-face{
+    font-family: 'date-font';
+    src: url('fonts/BebasNeue-Regular.ttf')
+}
+
+@font-face{
+    font-family: 'title-font';
+    src: url('fonts/Maximum\ Impact.ttf')
+}
+
+@font-face{
+    font-family: 'Poppins';
+    src: url('fonts/Poppins.ttf')
+}
+
+.textpanel {
+    position: relative;
+}
+.textpanel img {
+    display: block;
+}
+.textarea {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: safe top;
+    resize: both;
+    overflow: auto;
+    vertical-align: top;
+    max-height: 60vh;
+    min-height: 4rem;
+    min-width: 200px;
+  }
+
+.textarea:focus {
+    border: 2px solid blue;
+}
+
+#capture{
+    width: 1920px;
+    height: 1080px;
+}
+
+.title-area {
+    color: white;
+    font-family: 'title-font', sans-serif;
+    text-transform: title;
+    position: absolute;
+    align-items: center;
+    font-size: 140px;
+    text-shadow: 12px 12px 12px black;
+    top: 200px;
+    left: 60px;
+    /* height: 200px;
+    width: 200px; */
+    min-height: 200px;
+    min-width: 600px;
+    height: 500px;
+    width: 960px;
+    background: transparent;
+    border: hidden;
+    text-align: center;
+}
+.date-area {
+    color: white;
+    font-family: 'date-font', sans-serif;
+    text-transform: title;
+    position: absolute;
+    align-items: left;
+    font-size: 100px;
+    text-shadow: 12px 12px 12px black;
+    top: 920px;
+    left: 90px;
+    height: 120px;
+    width: 800px;
+    background: transparent;
+    border: hidden;
+    overflow-y: hidden;
+    overflow-x: auto;
+    resize: horizontal;
+    text-align: left;
+}
+
+
+.selection-choices{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding: 1%;
+}
+
+#step-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8em;
+    padding: auto;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+/* input[type="checkbox"]{
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+    border-radius: 4em;
+} */
+
+button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6em;
+    padding: 10px;
+    margin-left: 2rem;
+}
